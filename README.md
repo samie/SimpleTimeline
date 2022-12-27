@@ -1,26 +1,28 @@
-# Add-on starter for a web component integration from NPM
+# SimpleTimeline Add-on for Vaadin
 
-This is an example project for creating a Java wrapper for an existing Lit component that is available in npm.
-The example code integrates `@axa-ch/input-text`.
+This is a Vaadin Java wrapper for an existing [simple-timeline](https://github.com/parttio/simple-timeline) Lit-based web component. 
 
-Alternatively, using [this Lit-based project template](https://github.com/vaadin/addon-starter-lit-flow), 
-you can make a self-contained Vaadin-addon (i.e. without npm package, but Lit code integrated to the add-on). 
-If you wish to create a composite Vaadin add-on from existing Java 
-components or to for example wrap non-npm JS component, look at the minimalistic [the add-on starter template](https://github.com/vaadin/addon-starter-flow) instead.
+```
+final SimpleTimeline timeline = new SimpleTimeline("Release schedule");
+timeline.add(10, "Planning").addClassNames(SimpleTimelineItem.STYLE_SECONDARY,SimpleTimelineItem.VARIANT_DASHED);
+timeline.add(20, -1, "Brainstorming").setTooltip("🧠🧠🧠");
+timeline.add(40, "More planning").addClassNames(SimpleTimelineItem.STYLE_PRIMARY);
+timeline.add(70, 2, "Scrum").addClassNames(SimpleTimelineItem.STYLE_PRIMARY, SimpleTimelineItem.VARIANT_FILLED);
+timeline.add(95, 2, "Deadline: 31.12.2022").addClassNames(SimpleTimelineItem.VARIANT_FILLED, SimpleTimelineItem.STYLE_ERROR);
+timeline.setBreaks(25,50,75);
+timeline.addClickListener(e -> Notification.show(e.getItem().getText()));
+add(timeline);
+```
+
+![Release schedule](https://github.com/samie/SimpleTimeline/blob/v23/roadmap-timeline.png)
+
+
+By default theme follows Lumo styling variables.
 
 ## Development instructions
 
-JavaScript modules can either be published as an NPM package or be kept as local 
-files in your project. The local JavaScript modules should be put in 
-`src/main/resources/META-INF/frontend` so that they are automatically found and 
-used in the using application.
-
-If the modules are published then the package should be noted in the component 
-using the `@NpmPackage` annotation in addition to using `@JsModule` annotation.
-
-
 Starting the test/demo server:
-1. Run `mvn jetty:run`.
+1. Run `mvn`.
 2. Open http://localhost:8080 in the browser.
 
 ## Publishing to Vaadin Directory
@@ -31,6 +33,6 @@ mvn versions:set -DnewVersion=1.0.0 # You cannot publish snapshot versions
 mvn install -Pdirectory
 ```
 
-The package is created as `target/axa-input-text-1.0.0.zip`
+The package is created as `target/simpletimeline-1.0.0.zip`
 
 For more information or to upload the package, visit https://vaadin.com/directory/my-components?uploadNewComponent
