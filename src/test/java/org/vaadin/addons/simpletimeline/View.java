@@ -9,7 +9,7 @@ import com.vaadin.flow.router.Route;
 public class View extends VerticalLayout {
 
     public View() {
-        final SimpleTimeline timeline = new SimpleTimeline("Release schedule d");
+        final SimpleTimeline timeline = new SimpleTimeline("Release schedule");
         timeline.add(10, "Planning").addClassNames(SimpleTimelineItem.STYLE_SECONDARY,SimpleTimelineItem.VARIANT_DASHED);
         timeline.add(20, -1, "Brainstorming").setTooltip("🧠🧠🧠");
         timeline.add(40, "More planning").addClassNames(SimpleTimelineItem.STYLE_PRIMARY);
