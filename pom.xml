@@ -5,7 +5,7 @@
 
     <groupId>org.vaadin.addons.mygroup</groupId>
     <artifactId>simpletimeline</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>SimpleTimeline</name>
     <description>Integration of simple-timeline for Vaadin</description>
 
