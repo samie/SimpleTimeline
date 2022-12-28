@@ -1,5 +1,8 @@
 # SimpleTimeline Add-on for Vaadin
 
+[![Published on Vaadin Directory](https://img.shields.io/vaadin-directory/v/idle.svg)](https://vaadin.com/directory/component/simpletimeline)
+
+
 This is a Vaadin Java wrapper for an existing [simple-timeline](https://github.com/parttio/simple-timeline) Lit-based web component. 
 
 ```
