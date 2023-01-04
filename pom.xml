@@ -7,10 +7,10 @@
     <artifactId>simpletimeline</artifactId>
     <version>1.0.0</version>
     <name>SimpleTimeline</name>
-    <description>Integration of simple-timeline for Vaadin</description>
+    <description>Integration of simple-timeline web component for Vaadin</description>
 
     <properties>
-        <vaadin.version>23.3.1</vaadin.version>
+        <vaadin.version>23.3.2</vaadin.version>
 
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
