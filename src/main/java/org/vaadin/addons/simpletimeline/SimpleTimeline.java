@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Tag("simple-timeline")
 @JsModule("@parttio/simple-timeline/simple-timeline.js")
 @NpmPackage(value = "@parttio/simple-timeline", version = "2.0.5")
-public class SimpleTimeline extends Component implements HasStyle, HasSize, HasEnabled, HasComponents {
+public class SimpleTimeline extends Component implements HasStyle, HasSize, HasComponents {
 
     public SimpleTimeline() {
     }
