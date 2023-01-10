@@ -20,7 +20,7 @@
         <jetty.version>9.4.28.v20200408</jetty.version>
     </properties>
     <organization>
-        <name>###author###</name>
+        <name>Sami Ekblad</name>
     </organization>
     <licenses>
         <license>
