@@ -33,7 +33,7 @@ Starting the test/demo server:
 You can create the zip package needed for [Vaadin Directory](https://vaadin.com/directory/) using
 ```
 mvn versions:set -DnewVersion=1.0.0 # You cannot publish snapshot versions 
-mvn install -Pdirectory
+mvn clean install -Pdirectory
 ```
 
 The package is created as `target/simpletimeline-1.0.0.zip`
