@@ -23,7 +23,7 @@
         <vaadin.addon.name>${project.name}</vaadin.addon.name>
         <vaadin.addon.jar>${project.build.finalName}.${project.packaging}</vaadin.addon.jar>
         <vaadin.addon.version>${project.version}</vaadin.addon.version>
-        <vaadin.addon.owner>Simon Martinelli</vaadin.addon.owner>
+        <vaadin.addon.owner>Sami Ekblad</vaadin.addon.owner>
         <vaadin.addon.license>Apache License 2.0</vaadin.addon.license>
 
     </properties>
